@@ -46,7 +46,7 @@
   - [Bước 2. Thêm Secrets vào GitHub](#bước-2-thêm-secrets-vào-github)
 
 - [Thực hiện chạy code Terraform ](#thực-hiện-chạy-code-terraform)
-- [Upload file và vá tự động ](#-upload-file-và-vá-tự-động)
+- [Upload file và vá tự động ](#upload-file-và-vá-tự-động)
 
 ---
 
