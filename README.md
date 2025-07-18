@@ -4,7 +4,7 @@
 
 **Architecture of Solution:**
 
-## ![example](a.png)
+## ![example](/tf/image/a.png)
 
 ## 📑 Table of Contents
 
@@ -169,16 +169,16 @@ aws-cli/2.19.1 Python/3.11.6 Windows/10 exe/AMD64 prompt/off
 4. Tạo Access Key
 
 - Vào IAM chọn **Security credentials**
-  ![example](anh1.png)
+  ![example](/tf/image/anh1.png)
 - Tiếp theo, chọn **Create access key**
-  ![example](anh2.png)
+  ![example](/tf/image/anh2.png)
 - Chọn **Command Line Interface (CLI)**
 - Xác nhận bằng cách tick vào ô **I understand the above recommendation and want to proceed to create an access key** rồi chọn **Next**
-  ![example](anh3.png)
+  ![example](/tf/image/anh3.png)
 - Bạn có thể ghi mô tả của access key sau đó bấm **Create Access Key**
-  ![example](anh4.png)
+  ![example](/tf/image/anh4.png)
 - Kết quả sau khi tạo thành công
-  ![example](anh5.png)
+  ![example](/tf/image/anh5.png)
 
 ### Bước 3. cấu hình AWS CLI
 
@@ -328,11 +328,11 @@ Phần này cần bạn cấu hình lại một số các tên tài nguyên tron
 
 1. Trong folder `.github`, bạn truy cập `scripts`, tại file `create-deployment-packages.py` bạn sửa giá trị của biến `S3_BUCKET` thành `os.environ.get('S3_BUCKET', 'hackathon-vulnerability-vpbank-dev-vulnerability-data')`
 
-![example](scriptcode-3.PNG)
+![example](/tf/image/scriptcode-3.PNG)
 
 2. Trong foler `.github`, bạn truy cập `workflows`, tại file `deploy-packages.yml`, bạn sửa giá trị của biến `S3_BUCKET` thành `hackathon-vulnerability-vpbank-dev-vulnerability-data`
 
-![example](scriptcode-2.PNG)
+![example](/tf/image/scriptcode-2.PNG)
 
 3. Sau khi sửa xong mã nguồn, bạn thực hiện commit code mới lên **Github Repo** `vulnerability-scripts` của bạn bằng các câu lệnh sau:
 
@@ -353,13 +353,13 @@ git push -u origin main
 
 1. Vào repo `vulnerability-scripts` chọn **setting**
 
-![example](anh6.png)
+![example](/tf/image/anh6.png)
 
 2. Tại thanh menu bên trái, chọn **secrets and varialbe** -> chọn **Actions**
 
 3. Chọn **New repository secrect**
 
-![example](anh9.png)
+![example](/tf/image/anh9.png)
 
 4 Tạo Github Action **Access key**
 
@@ -428,27 +428,27 @@ Terraform destroy
 #### Sau khi đã chạy terraform apply thành công, bạn truy cập AWS Console, truy cập dịch vụ S3 và kiểm tra xem đã có Bucket hay chưa
 
 1. Chọn Bucket **hackathon-vulnerability-vpbank-dev-vulnerability-data**
-   ![example](s3-1.PNG)
+   ![example](/tf/image/s3-1.PNG)
 
 2. Chọn Bucket **raw-vulnerability-data/**
-   ![example](s3-2.PNG)
+   ![example](/tf/image/s3-2.PNG)
 
 3. Bấm **Upload**
-   ![example](s3-3.PNG)
+   ![example](/tf/image/s3-3.PNG)
 
 4. Bấm **Add file**
-   ![example](s3-4.PNG)
+   ![example](/tf/image/s3-4.PNG)
 
 5. Chọn file **data** -> click **Upload**
-   ![example](s3-5.PNG)
+   ![example](/tf/image/s3-5.PNG)
 
 6. Đây là giao diện khi **Upload** file thành công
-   ![example](s3-6.PNG)
+   ![example](/tf/image/s3-6.PNG)
 7. Lên thanh tìm kiếm **CodePipeline**
 - Đợi cho **CodePipeline** chạy hết quy trình 
 - Hình ảnh bên dưới là quy trình chạy thành công 
-![example](log.png)
+![example](/tf/image/log.png)
 8. Quay về **hackathon-vulnerability-vpbank-dev-vulnerability-data** -> Chọn **logs/**
 - Kiểm tra in ra file logs của những bản vá 
 - Đây là ví dụ của bản ghi **của 1 máy windows-sever-2019**
-![example](s3-8.PNG)
+![example](/tf/image/s3-8.PNG)
